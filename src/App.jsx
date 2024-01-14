@@ -123,15 +123,15 @@ function Inicio({
         <h2>FORMULARIO:</h2>
         <div>
           <label>--Nombre--:</label>
-          <input type="text" value={nombre} onChange={handleNombreChange} />
+          <input type="text" value={nombre} onChange={handleNombreChange} aria-labelledby="nombre"/>
         </div>
         <div>
           <label>----Año----:</label>
-          <input type="number" value={anio} onChange={handleAnioChange} />
+          <input type="number" value={anio} onChange={handleAnioChange} aria-labelledby="number"/>
         </div>
         <div>
           <label>Canciones (separadas por ";"):</label>
-          <input type="text" value={cancion} onChange={handleCancionChange} />
+          <input type="text" value={cancion} onChange={handleCancionChange} aria-labelledby="text"/>
         </div>
         <button type="button" onClick={handleAddCompositor}>
           Agregar Compositor
