@@ -6,10 +6,10 @@ function Compositores({ compositores }) {
       {compositores.map((compositor, index) => (
         <>
           <ul>
-            <p key={index}>{compositor.nombre}</p>
-            <p key={index}>
+            <li key={index}>{compositor.nombre}</li>
+            <li key={index}>
               <li>{compositor.fecha}</li>
-            </p>
+            </li>
             {compositor.canciones.map((cancion, idx) => (
               <ul>
                 <li key={idx}>{cancion}</li>
